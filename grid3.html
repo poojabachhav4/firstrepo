@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+ <style>
+
+
+.content{
+    display: grid;
+    grid-gap: 10px;
+        grid-template-columns: repeat(5, [col] 1fr );
+        grid-template-rows:  repeat(3 [row] auto);;
+        background-color: white;
+        color: #444;
+        
+}
+
+.box{
+         background-color:white;
+            text-align: center;
+}
+.p1 {
+    grid-column: col 1;
+        grid-row: row 1;
+        
+    }
+
+    .p2 {
+    grid-column: col 2/span 3;
+        grid-row: row 1/span 2;
+        
+    }
+
+    .p3 {
+    grid-column: col 5;
+        grid-row: row 1;
+        
+    }
+    .p4 {
+    grid-column: col 1;
+        grid-row: row 2;
+        
+    }
+    .p5 {
+    grid-column: col 5;
+        grid-row: row 2;
+        
+    }
+    .p6{
+    grid-column: col 1;
+        grid-row: row 3;
+        
+    }
+    .p7{
+    grid-column: col 2;
+        grid-row: row 3;
+        
+    }
+    .p8 {
+    grid-column: col 3;
+        grid-row: row 3;
+        
+    }
+    .p9 {
+    grid-column: col 4;
+        grid-row: row 3;
+        
+    }
+    .p10 {
+    grid-column: col 5;
+        grid-row: row 3;
+        
+    }
+    .img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+
+
+ </style>
+ <div class="content">
+    <div class="box p1"> <img src="C:\Users\Pooja Bachhav\Desktop\pictures\p1.jpg"class="img"></div>
+    <div class="box p2"> <img src="C:\Users\Pooja Bachhav\Desktop\pictures\p2.jpg"class="img"></div>
+    <div class="box p3"> <img src="C:\Users\Pooja Bachhav\Desktop\pictures\p3.jpg"class="img"></div>
+    <div class="box p4"> <img src="C:\Users\Pooja Bachhav\Desktop\pictures\p4.jpg"class="img"></div>
+    <div class="box p5"> <img src="C:\Users\Pooja Bachhav\Desktop\pictures\p5.jpg"class="img"></div>
+    <div class="box p6"> <img src="C:\Users\Pooja Bachhav\Desktop\pictures\p6.jpg"class="img"></div>
+    <div class="box p7"> <img src="C:\Users\Pooja Bachhav\Desktop\pictures\p7.jpg"class="img"></div>
+    <div class="box p8"> <img src="C:\Users\Pooja Bachhav\Desktop\pictures\p8.jpg"class="img"></div>
+    <div class="box p9"> <img src="C:\Users\Pooja Bachhav\Desktop\pictures\p9.jpg"class="img"></div>
+    <div class="box p10"><img src="C:\Users\Pooja Bachhav\Desktop\pictures\p10.jpg"class="img"></div>
+  
+ </div>
+
+    

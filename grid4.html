@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+ <style>
+
+
+.content{
+    display: grid;
+    grid-gap: 10px;
+        grid-template-columns: repeat(6, [col] 1fr );
+        grid-template-rows:  repeat(12, [row] auto);;
+        background-color: white;
+        color: #444;
+        
+}
+
+.box{
+    background-color:yellowgreen;
+        padding: 20px;
+        text-align:start;
+}
+
+.one {
+       grid-column: col 1;
+        grid-row: row /span 12;
+        
+    }
+
+.two{
+        grid-column: col 2;
+        grid-row: row 1/span 6 ;
+    }
+.three{
+        grid-column: col 2  ;
+        grid-row: row 7/span 6 ;
+    }
+.four{
+       grid-column: col 3;
+        grid-row: row 1/span 4 ;
+    }
+
+.five {
+       grid-column: col 3;
+        grid-row: row 5/span 4;
+    }
+.six{
+       grid-column: col 3;
+        grid-row: row 9/span 4;
+    }
+.seven{
+       grid-column: col 4;
+        grid-row: row 1/span 3;
+    }
+
+.eight{
+       grid-column: col 4;
+        grid-row: row 4/span 3;
+     }
+.nine{
+       grid-column: col 4;
+        grid-row: row 7/span 3;
+    }
+.ten{
+       grid-column: col 4;
+        grid-row: row 10/span 3;
+    }
+
+
+.eleven{
+       grid-column: col 5;
+        grid-row: row 1 /span 2;
+        
+    }
+
+.twelve{
+        grid-column: col 5;
+        grid-row: row 3/span 2;
+    }
+.thirteen{
+        grid-column: col 5  ;
+        grid-row: row 5/span 2 ;
+    }
+.fourteen{
+       grid-column: col 5;
+        grid-row: row 7/span 2;
+    }
+
+.fifteen{
+       grid-column: col 5;
+        grid-row: row 9/span 2;
+    }
+.sixteen{
+       grid-column: col 5;
+        grid-row: row 11/span 2;
+    }
+
+    
+.seventeen{
+       grid-column: col 6;
+        grid-row: row 1;     
+    }
+
+.eighteen{
+        grid-column: col 6;
+        grid-row: row 2 ;
+    }
+.nineteen{
+        grid-column: col 6;
+        grid-row: row 3 ;
+    }
+.twenty{
+       grid-column: col 6;
+        grid-row: row 4 ;
+    }
+
+.twentyone{
+       grid-column: col 6;
+        grid-row: row 5;
+    }
+.twentytwo{
+       grid-column: col 6;
+        grid-row: row 6;
+    }
+.twentythree{
+       grid-column: col 6;
+        grid-row: row 7;
+}
+
+.twentyfour{
+       grid-column: col 6;
+        grid-row: row 8;
+     }
+.twentyfive{
+       grid-column: col 6;
+        grid-row: row 9;
+    }
+.twentysix{
+       grid-column: col 6;
+        grid-row: row 10;
+    }
+
+.twentyseven{
+       grid-column: col 6;
+        grid-row: row 11;
+        
+    }
+
+.twentyeight{
+        grid-column: col 6;
+        grid-row: row 12;
+    }
+    
+ </style>
+ <div class="content">
+    <div  class="box one">1</div>
+    <div  class="box two">2</div>
+    <div  class="box three">3</div>
+    <div  class="box four">4</div>
+    <div  class="box five">5</div>
+    <div  class="box six">6</div>
+    <div  class="box seven">7</div>
+    <div  class="box eight">8</div>
+    <div  class="box nine">9</div>
+    <div  class="box ten">10</div>
+    <div  class="box eleven">11</div>
+    <div  class="box twelve">12</div>
+    <div  class="box thirteen">13</div>
+    <div  class="box fourteen">14</div>
+    <div  class="box fifteen">15</div>
+    <div  class="box sixteen">16</div>
+    <div  class="box seventeen">17</div>
+    <div  class="box eighteen">18</div>
+    <div  class="box nineteen">19</div>
+    <div  class="box twenty">20</div>
+    <div  class="box twentyone">21</div>
+    <div  class="box twentytwo">22</div>
+    <div  class="box twentythree">23</div>
+    <div  class="box twentyfour">24</div>
+    <div  class="box twentyfive">25</div>
+    <div  class="box twentysix">26</div>
+    <div  class="box twentyseven">27</div>
+    <div  class="box twentyeight">28</div>
+   
+ </div>
+
+    

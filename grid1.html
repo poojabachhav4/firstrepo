@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+ <style>
+body {
+  margin: 40px;
+}
+
+.content{
+    display: grid;
+    grid-gap: 10px;
+        grid-template-columns:repeat(3, [col] 1fr ) ;
+        grid-template-rows: repeat(4, [row] auto);
+        background-color: white;
+        color: #444;
+        
+}
+
+.box{
+    background-color:orange;
+        padding: 20px;
+        text-align: center;
+}
+
+.header {
+    grid-column: col / span 3;
+        grid-row: row 1;
+        
+    }
+
+.nav{
+    padding-top: 200px;
+    padding-bottom: 200px;
+        grid-column: col 1;
+        grid-row: row 2 ;
+    }
+.cont{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-right: 200px;
+    padding-left: 200px;
+        grid-column: col 2  ;
+        grid-row: row 2 ;
+    }
+.aside{
+      padding-top: 200px;
+      padding-bottom: 200px;
+        grid-column: col 3 ;
+        grid-row: row 2 ;
+    }
+
+.footer {
+    grid-column: col / span 3;
+        grid-row: row 3;
+    }
+ </style>
+ <div class="content">
+    <div  class="box header">HEADER</div>
+    <div  class="box nav">NAV</div>
+    <div  class="box cont">CONTENTS</div>
+    <div  class="box aside">ASIDE</div>
+    <div  class="box footer">FOOTER</div>
+ </div>
+
+    
